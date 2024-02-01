@@ -1,4 +1,6 @@
 # My fish config. Not much to see here; just some standard stuff by Tr00p3r.
+##Set fish Dracula theme## 
+fish_config theme choose "Dracula Official"
 
 ### ADDING TO THE PATH
 # First line removes the path; second line sets it.  Without the first line,
@@ -7,10 +9,10 @@ set -e fish_user_paths
 set -U fish_user_paths $HOME/.bin  $HOME/.local/bin $HOME/.config/emacs/bin $HOME/Applications /var/lib/flatpak/exports/bin/ $fish_user_paths
 
 ### EXPORT ###
-set fish_greeting                                 # Supresses fish's intro message
-set TERM "xterm-256color"                         # Sets the terminal type
+set fish_greeting                 # Supresses fish's intro message
+set TERM "kitty"                 # Sets the terminal type
 set EDITOR "vim"                 # $EDITOR use spacevim in terminal
-set VISUAL "vim"              # $VISUAL use spacevim in GUI mode
+set VISUAL "code"                # $VISUAL use vscode in GUI mode
 
 ### SET MANPAGER
 ### Uncomment only one of these!
