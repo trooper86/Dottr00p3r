@@ -1,4 +1,4 @@
-# My fish config. Not much to see here; just some standard stuff by Tr00p3r.
+# My fish config. Not much to see here just some standard stuff by Tr00p3r.
 ##Set fish Dracula theme## 
 fish_config theme choose "Dracula Official"
 
@@ -155,8 +155,8 @@ alias l.='eza -a | grep -E "^\."'
 # pacman and yay
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update
-alias yaysua='yay -Sua --noconfirm'             # update only AUR pkgs (paru)
-alias yaysyu='yay -Syu --noconfirm'             # update standard pkgs and AUR
+alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (paru)
+alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
 alias listorphans='sudo pacman -Qdt'             # lists orhpaned packages
@@ -278,8 +278,7 @@ alias yta-opus="yt-dlp --extract-audio --audio-format opus "
 alias yta-vorbis="yt-dlp --extract-audio --audio-format vorbis "
 alias yta-wav="yt-dlp --extract-audio --audio-format wav "
 alias ytv-best="yt-dlp -f bestvideo+bestaudio "
-
-# yt-dlp aliases
+# yt-dlp more aliases #
 alias ydl='yt-dlp'
 alias ydlmp4='yt-dlp -f "bestvideo&#91;ext=mp4]+bestaudio&#91;ext=m4a]/best&#91;ext=mp4]/best"'
 alias ydlmkv='yt-dlp -f "bestvideo&#91;ext=mkv]+bestaudio&#91;ext=mka]/best&#91;ext=mkv]/best"'
