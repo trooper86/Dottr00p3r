@@ -132,6 +132,10 @@ function org-search -d "send a search string to org-mode"
     printf $output
 end
 
+function man
+    /usr/bin/man $argv; or help $argv
+end
+
 ### END OF FUNCTIONS ###
 
 ### ALIASES ###
@@ -258,6 +262,8 @@ alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
 #alias neo="neofetch | lolcat"
 alias cat='bat'
 alias neo="neofetch | lolcat -a -s 1150.0 -F 1.0"
+#Use man in fish shell
+alias man= '/usr/bin/man'
 
 # Ranger
 alias r="ranger"
