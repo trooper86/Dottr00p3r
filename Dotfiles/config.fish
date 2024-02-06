@@ -155,7 +155,7 @@ alias l.='eza -a | grep -E "^\."'
 # pacman and yay
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (paru)
+alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay or paru)
 alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
