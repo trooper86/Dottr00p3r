@@ -259,7 +259,7 @@ alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
 
 # my lil alias
 #alias clr='clear'
-#alias neo="neofetch | lolcat"
+#alias neo="neofetch | lolcat
 alias cat='bat'
 alias neo="neofetch | lolcat -a -s 1150.0 -F 1.0"
 #Use man in fish shell
@@ -284,6 +284,7 @@ alias yta-opus="yt-dlp --extract-audio --audio-format opus "
 alias yta-vorbis="yt-dlp --extract-audio --audio-format vorbis "
 alias yta-wav="yt-dlp --extract-audio --audio-format wav "
 alias ytv-best="yt-dlp -f bestvideo+bestaudio "
+
 # yt-dlp more aliases #
 alias ydl='yt-dlp'
 alias ydlmp4='yt-dlp -f "bestvideo&#91;ext=mp4]+bestaudio&#91;ext=m4a]/best&#91;ext=mp4]/best"'
