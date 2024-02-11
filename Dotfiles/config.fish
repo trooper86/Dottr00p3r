@@ -133,6 +133,7 @@ function org-search -d "send a search string to org-mode"
     printf $output
 end
 
+#Function for man page
 function man
     /usr/bin/man $argv; or help $argv
 end
@@ -254,6 +255,7 @@ alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
+#Quick edit
 alias .brc="$EDITOR ~/.bashrc"
 alias cfc="$EDITOR ~/.config/fish/config.fish"
 alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
