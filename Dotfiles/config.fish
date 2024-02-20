@@ -1,4 +1,4 @@
-##My fish config. Not much to see here just some standard stuff by Tr00p3r.##
+##My fish config. Not much to see here just some standard stuff by Tr00p3r86.##
 
 ##Set fish Dracula theme## 
 fish_config theme choose "Dracula Official"
