@@ -180,8 +180,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 #pacman
-alias sps='sudo pacman -S'
-alias spr='sudo pacman -R'
+alias install='sudo pacman -S'
+alias remove='sudo pacman -R'
 alias sprs='sudo pacman -Rs'
 alias sprdd='sudo pacman -Rdd'
 alias spqo='sudo pacman -Qo'
