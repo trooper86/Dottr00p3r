@@ -180,8 +180,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 #pacman
-alias install='sudo pacman -S'
-alias remove='sudo pacman -R'
+alias sps='sudo pacman -S'
+alias spr='sudo pacman -R'
 alias sprs='sudo pacman -Rs'
 alias sprdd='sudo pacman -Rdd'
 alias spqo='sudo pacman -Qo'
@@ -237,7 +237,7 @@ alias jctl="journalctl -p 3 -xb"
 # gpg encryption
 # verify signature for isos
 alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
-
+ 
 # receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
