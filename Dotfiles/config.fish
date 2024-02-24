@@ -187,6 +187,7 @@ alias sprdd='sudo pacman -Rdd'
 alias spqo='sudo pacman -Qo'
 alias spsii='sudo pacman -Sii'
 alias clearCache="sudo pacman -Sc"
+alias search="sudo pacman -Ss"
 
 # paru and yay as aur helper - updates everything
 alias pursyu="paru -Syu --noconfirm"
