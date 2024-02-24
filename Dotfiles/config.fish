@@ -12,7 +12,7 @@ set -U fish_user_paths $HOME/.bin  $HOME/.local/bin $HOME/.config/emacs/bin $HOM
 ### EXPORT ###
 set fish_greeting                # Supresses fish's intro message
 set TERM "kitty"                 # Sets the terminal type
-set EDITOR "vim"                 # $EDITOR use spacevim in terminal
+set EDITOR "nvim"                 # $EDITOR use spacevim in terminal
 set VISUAL "code"                # $VISUAL use vscode in GUI mode
 
 ### SET MANPAGER
