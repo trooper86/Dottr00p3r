@@ -158,15 +158,25 @@ alias ll='eza -l --color=always --group-directories-first --icons'  # long forma
 alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
 alias l.='eza -a | grep -E "^\."'
 
-# pacman and yay
+#pacman
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update
 alias pacss='sudo pacman -Ss'                    # Search only standard pkgs
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay or paru)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR
+alias pacs='sudo pacman -S'
+alias pacr='sudo pacman -R'
+alias pacrs='sudo pacman -Rs'
+alias pacdd='sudo pacman -Rdd'
+alias pacqo='sudo pacman -Qo'
+alias pacsii='sudo pacman -Sii'
+alias clearCache="sudo pacman -Sc"
+alias search="sudo pacman -Ss"
+alias listorphans='sudo pacman -Qdt'             # lists orhpaned packages
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
-alias listorphans='sudo pacman -Qdt'             # lists orhpaned packages
+
+# AUR yay
+alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay or paru)
+alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR
 alias yaysyyu='yay -Syyu --noconfirm'            # update & sync standard pkgs and AUR
 alias yayss='yay -Ss'                            # Search for AUR packages
 alias yays='yay -S'                              # install form AUR 
@@ -181,16 +191,6 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
-#pacman
-alias install='sudo pacman -S'
-alias remove='sudo pacman -R'
-alias sprs='sudo pacman -Rs'
-alias sprdd='sudo pacman -Rdd'
-alias spqo='sudo pacman -Qo'
-alias spsii='sudo pacman -Sii'
-alias clearCache="sudo pacman -Sc"
-alias search="sudo pacman -Ss"
 
 # paru and yay as aur helper - updates everything
 alias pursyu="paru -Syu --noconfirm"
