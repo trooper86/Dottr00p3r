@@ -326,7 +326,10 @@ alias ssh='kitten ssh'
 ### RANDOM COLOR SCRIPT ###
 # Get this script from my GitLab: gitlab.com/dwt1/shell-color-scripts
 # Or install it from the Arch User Repository: shell-color-scripts
-#colorscript random
+colorscript random
+
+#Display Pokemon
+#pokemon-colorscripts --no-title -r 1,3,6
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
