@@ -1,7 +1,7 @@
 # _____ ____ 
 #|_   _||  _ \   Tr00p3r's Dotfiles
 #  | |  | | | |  https://github.com/trooper86/Dottr00p3r
-#  | |  | |_| | 
+#  | |  | |_| |  士兵 
 #  |_|  |____/ 
 
 ##My fish config. Not much to see here just some standard stuff by Tr00p3r86.##
