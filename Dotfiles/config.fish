@@ -1,8 +1,14 @@
-# _____ ____ 
-#|_   _||  _ \   Tr00p3r's Dotfiles
-#  | |  | | | |  https://github.com/trooper86/Dottr00p3r
-#  | |  | |_| |  士兵 
-#  |_|  |____/ 
+#
+#  _____      ___   ___       _____      
+#  _   _| __ / _ \ / _ \ _ __|___ / _ __ 
+#   | || '__| | | | | | | '_ \ |_ \| '__|
+#   | || |  | |_| | |_| | |_) |__) | |   
+#   |_||_|   \___/ \___/| .__/____/|_|   
+#                       |_|              
+#  Tr00p3r's Dotfiles
+#  https://github.com/trooper86/Dottr00p3r
+#    士兵 
+#   
 
 ##My fish config. Not much to see here just some standard stuff by Tr00p3r86.##
 
