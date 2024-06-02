@@ -297,8 +297,8 @@ alias cpu="cpuid -i | grep uarch | head -n 1"
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
 #shutdown or reboot
-alias ssn="sudo shutdown now"
-alias sr="reboot"
+alias rsn="sudo shutdown now"
+alias rs="reboot"
 
 # Ranger
 alias r="ranger"
