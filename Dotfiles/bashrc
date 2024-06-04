@@ -1,11 +1,14 @@
-# _____ ____ 
-#|_   _||  _ \   Tr00p3r's Dotfiles
-#  | |  | | | |  https://github.com/trooper86/Dottr00p3r
-#  | |  | |_| |  士兵 
-#  |_|  |____/ 
-
+#  _____      ___   ___       _____      
+#  _   _| __ / _ \ / _ \ _ __|___ / _ __ 
+#   | || '__| | | | | | | '_ \ |_ \| '__|
+#   | || |  | |_| | |_| | |_) |__) | |   
+#   |_||_|   \___/ \___/| .__/____/|_|   
+#                       |_|              
+#  Tr00p3r's Dotfiles
+#  https://github.com/trooper86/Dottr00p3r
+#    士兵 
 # ~/.bashrc
-#
+
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
