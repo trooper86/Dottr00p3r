@@ -6,8 +6,7 @@
 #                       |_|              
 #  Tr00p3r's Dotfiles
 #  https://github.com/trooper86/Dottr00p3r
-#    士兵 
-#   
+#    士兵    
 
 ##My fish config. Not much to see here just some standard stuff by Tr00p3r86.##
 
