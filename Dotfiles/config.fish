@@ -186,14 +186,15 @@ alias listorphans='sudo pacman -Qdt'             # lists orhpaned packages
 #alias unlock='sudo rm /var/lib/pacman/db.lck'   # remove pacman lock
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
 
-# AUR yay
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay or paru)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR
-alias yaysyyu='yay -Syyu --noconfirm'            # update & sync standard pkgs and AUR
-alias yayss='yay -Ss'                            # Search for AUR packages
-alias yays='yay -S'                              # install form AUR 
+####AUR yay####
+alias yaysua='yay -Sua --noconfirm'            # update only AUR pkgs (yay or paru)
+alias yaysyu='yay -Syu --noconfirm'            # update standard pkgs and AUR
+alias yaysyyu='yay -Syyu --noconfirm'          # update & sync standard pkgs and AUR
+alias yayss='yay -Ss'                         # Search for AUR packages
+alias yays='yay -S'                           # install form AUR 
+alias yayr='yay -R'                           # remove packages
 
-# get fastest mirrors
+###get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
