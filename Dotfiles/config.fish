@@ -21,9 +21,9 @@ set -U fish_user_paths $HOME/.bin  $HOME/.local/bin $HOME/.config/emacs/bin $HOM
 
 ### EXPORT ###
 set fish_greeting                # Supresses fish's intro message
-set TERM "kitty"                 # Sets the terminal type
-set EDITOR "nvim"                 # $EDITOR use spacevim in terminal
-set VISUAL "code"                # $VISUAL use vscode in GUI mode
+set TERM "kitty"                # Sets the terminal type
+set EDITOR "nvim"               # $EDITOR use spacevim in terminal
+set VISUAL "code"               # $VISUAL use vscode in GUI mode
 
 ### SET MANPAGER
 ### Uncomment only one of these!
@@ -220,8 +220,8 @@ alias listt="sudo pacman -Qqet"
 alias listaur="sudo pacman -Qqem"
 
 # adding flags
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
+alias df='df -h'                      # human-readable sizes
+alias free='free -m'                  # show sizes in MB
 
 # ps
 alias psa="ps auxf"
@@ -278,7 +278,6 @@ alias .brc="$EDITOR ~/.bashrc"
 alias cfc="$EDITOR ~/.config/fish/config.fish"
 alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
 
-# my lil alias
 #alias clr='clear'                            #clear terminal 
 #alias neo="neofetch | lolcat
 alias cat='bat'
@@ -309,7 +308,7 @@ alias r="ranger"
 alias icat="kitten icat"
 
 #clear
-alias cl="clear; seq 1 (tput cols) | sort -R | sparklines | lolcat"
+alias cl="clear; seq 1 (tput cols) | sort -R | sparklines | lolcat"        #clear terminal with sparklines | lolcat
 
 # yt-dlp
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
@@ -340,7 +339,7 @@ alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 # termbin
 alias tb="nc termbin.com 9999"
 
-# the terminal rickroll
+# the terminal rickroll 
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 # Mocp must be launched with bash instead of Fish!
