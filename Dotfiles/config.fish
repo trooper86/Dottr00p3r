@@ -150,7 +150,10 @@ end
 
 ### END OF FUNCTIONS ###
 
-### ALIASES ###
+#  ┌─┐┬  ┬┌─┐┌─┐
+#  ├─┤│  │├─┤└─┐
+#  ┴ ┴┴─┘┴┴ ┴└─┘
+
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
