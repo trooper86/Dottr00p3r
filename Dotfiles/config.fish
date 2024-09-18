@@ -182,6 +182,14 @@ alias yayss='yay -Ss'                         # Search for AUR packages
 alias yays='yay -S'                           # install form AUR 
 alias yayr='yay -R'                           # remove packages
 
+####AUR Paru####
+alias parsua='paru -Sua --noconfirm'            # update only AUR pkgs (yay or paru)
+alias parsyu='paru -Syu --noconfirm'            # update standard pkgs and AUR
+alias parsyyu='paru -Syyu --noconfirm'          # update & sync standard pkgs and AUR
+alias parss='paru -Ss'                         # Search for AUR packages
+alias pars='paru -S'                           # install form AUR 
+alias parr='paru -R'                           # remove packages
+
 ###get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
