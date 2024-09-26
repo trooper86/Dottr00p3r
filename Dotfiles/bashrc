@@ -293,6 +293,7 @@ shopt -s expand_aliases # expand aliases
 #alias clr='clear'
 #alias neo="neofetch | lolcat"
 alias aur-com='paru -Gc'
+
 # yt-dlp
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
 alias yta-best="yt-dlp --extract-audio --audio-format best "
@@ -303,6 +304,7 @@ alias yta-opus="yt-dlp --extract-audio --audio-format opus "
 alias yta-vorbis="yt-dlp --extract-audio --audio-format vorbis "
 alias yta-wav="yt-dlp --extract-audio --audio-format wav "
 alias ytv-best="yt-dlp -f bestvideo+bestaudio "
+
 # yt-dlp aliases
 alias ydl='yt-dlp'
 alias ydlmp4='yt-dlp -f "bestvideo&#91;ext=mp4]+bestaudio&#91;ext=m4a]/best&#91;ext=mp4]/best"'
@@ -321,10 +323,13 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 # This will generate a list of explicitly installed packages
 alias list="sudo pacman -Qqe"
+
 #This will generate a list of explicitly installed packages without dependencies
 alias listt="sudo pacman -Qqet"
+
 # list of AUR packages
 alias listaur="sudo pacman -Qqem"
+
 # add > list at the end to write to a file
 
 # install packages from list
@@ -460,26 +465,6 @@ alias snapchome="sudo snapper -c home create-config /home"
 alias snapli="sudo snapper list"
 alias snapcr="sudo snapper -c root create"
 alias snapch="sudo snapper -c home create"
-
-#Leftwm aliases
-alias lti="leftwm-theme install"
-alias ltu="leftwm-theme uninstall"
-alias lta="leftwm-theme apply"
-alias ltupd="leftwm-theme update"
-alias ltupg="leftwm-theme upgrade"
-
-#arcolinux applications
-#att is a symbolic link now
-alias att="archlinux-tweak-tool"
-alias adt="arcolinux-desktop-trasher"
-alias abl="arcolinux-betterlockscreen"
-alias agm="arcolinux-get-mirrors"
-alias amr="arcolinux-mirrorlist-rank-info"
-alias aom="arcolinux-osbeck-as-mirror"
-alias ars="arcolinux-reflector-simple"
-alias atm="arcolinux-tellme"
-alias avs="arcolinux-vbox-share"
-alias awa="arcolinux-welcome-app"
 
 #git
 alias rmgitcache="rm -r ~/.cache/git"
