@@ -160,7 +160,7 @@ alias la='eza -a --color=always --group-directories-first --icons'  # all files 
 alias ll='eza -l --color=always --group-directories-first --icons'  # long format
 alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
 alias l.='eza -a | grep -E "^\."'                                  # List only dot files
-alias ld='ls -d */'                                                # list dirs only
+alias ld='ls -d */'                                                # List only directories
 
 #pacman
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
