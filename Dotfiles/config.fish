@@ -159,7 +159,7 @@ alias ls='eza -al --color=always --group-directories-first --icons' # my preferr
 alias la='eza -a --color=always --group-directories-first --icons'  # all files and dirs
 alias ll='eza -l --color=always --group-directories-first --icons'  # long format
 alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
-alias l.='eza -a | grep -E "^\."'
+alias l.='eza -a | grep -E "^\."'                                  # List only dot files
 alias ld='ls -d */'                                                # list dirs only
 
 #pacman
