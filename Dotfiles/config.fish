@@ -151,12 +151,16 @@ alias .5='cd ../../../../..'
 # vim 
 alias vim='nvim'
 
+#emacsclient
+alias emacs='emacsclient -c -a 'vim''
+
 # Changing "ls" to "eza"
 alias ls='eza -al --color=always --group-directories-first --icons' # my preferred listing
 alias la='eza -a --color=always --group-directories-first --icons'  # all files and dirs
 alias ll='eza -l --color=always --group-directories-first --icons'  # long format
 alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
 alias l.='eza -a | grep -E "^\."'
+alias ld='ls -d */'                                                # list dirs only
 
 #pacman
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
@@ -293,7 +297,7 @@ alias cpu="cpuid -i | grep uarch | head -n 1"
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
 #shutdown or reboot
-alias rsn="sudo shutdown now"
+alias sdn="sudo shutdown now"
 alias rs="reboot"
 
 # Ranger
