@@ -93,6 +93,10 @@ Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 EndeavourOS = ""
+NixOS = " "
+Kali = " "
+FreeBSD = " "
+Pop = " "
 
 [username]
 show_always = true
