@@ -248,6 +248,9 @@ alias push='git push origin'
 alias tag='git tag'
 alias newtag='git tag -a'
 
+#add new fonts
+alias update-fc='sudo fc-cache -fv'
+
 #see all running services
 alias running_services='systemctl --type=service --state=active'
 
