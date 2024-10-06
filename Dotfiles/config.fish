@@ -162,6 +162,10 @@ alias lt='eza -aT --color=always --group-directories-first --icons' # tree listi
 alias l.='eza -a | grep -E "^\."'                                  # List only dot files
 alias ld='ls -d */'                                                # List only directories
 
+## Trash-cli alias 
+alias rm='rmtrash'
+alias rmdir='rmdirtrash'
+
 #pacman
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update
