@@ -244,11 +244,6 @@ shopt -s dotglob
 shopt -s histappend # do not overwrite history
 shopt -s expand_aliases # expand aliases
 
-# my lil alias
-#alias clr='clear'
-#alias neo="neofetch | lolcat"
-alias aur-com='paru -Gc'
-
 # yt-dlp
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
 alias yta-best="yt-dlp --extract-audio --audio-format best "
@@ -269,10 +264,6 @@ alias ydlmkv='yt-dlp -f "bestvideo&#91;ext=mkv]+bestaudio&#91;ext=mka]/best&#91;
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
-#iso and version used to install ArcoLinux
-alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
-alias isoo="cat /etc/dev-rel"
-
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
@@ -284,8 +275,6 @@ alias listt="sudo pacman -Qqet"
 
 # list of AUR packages
 alias listaur="sudo pacman -Qqem"
-
-# add > list at the end to write to a file
 
 # install packages from list
 # pacman -S --needed - < my-list-of-packages.txt
@@ -343,10 +332,6 @@ alias fix-keyserver="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/
 #fixes
 alias fix-permissions="sudo chown -R $USER:$USER ~/.config ~/.local"
 
-#maintenance
-alias big="expac -H M '%m\t%n' | sort -h | nl"
-alias downgrada="sudo downgrade --ala-url https://ant.seedhost.eu/arcolinux/"
-
 #hblock (stop tracking with hblock)
 #use unhblock to stop using hblock
 alias unhblock="hblock -S none -D none"
@@ -356,11 +341,8 @@ alias probe="sudo -E hw-probe -all -upload"
 alias sysfailed="systemctl list-units --failed"
 
 #shutdown or reboot
-alias ssn="sudo shutdown now"
-alias sr="reboot"
-
-#update betterlockscreen images
-alias bls="betterlockscreen -u /usr/share/backgrounds/arcolinux/"
+alias sdn="sudo shutdown now"
+alias rs="reboot"
 
 #give the list of all installed desktops - xsessions desktops
 alias xd="ls /usr/share/xsessions"
@@ -408,10 +390,6 @@ alias snapli="sudo snapper list"
 alias snapcr="sudo snapper -c root create"
 alias snapch="sudo snapper -c home create"
 
-#git
-alias rmgitcache="rm -r ~/.cache/git"
-alias grh="git reset --hard"
-
 #grub update
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
@@ -443,7 +421,7 @@ alias personal='cp -Rf /personal/* ~'
 #sysinfo
 #sysinfo-retro
 #cpufetch
-colorscript random #| lolcat
+#colorscript random #| lolcat
 #pokemon-colorscripts --no-title -r 1,3,6
 # ~/.bashrc
 
