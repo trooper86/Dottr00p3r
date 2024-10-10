@@ -162,7 +162,7 @@ alias yayss='yay -Ss' # Search for AUR packages
 alias yays='yay -S' # install form AUR 
 alias yayr='yay -R' # remove packages
 
-####AUR Paru####
+####AUR Paru#####
 alias parsua='paru -Sua --noconfirm' # update only AUR pkgs (yay or paru)
 alias parsyu='paru -Syu --noconfirm' # update standard pkgs and AUR
 alias parsyyu='paru -Syyu --noconfirm' # update & sync standard pkgs and AUR
