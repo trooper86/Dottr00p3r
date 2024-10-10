@@ -90,15 +90,23 @@ alias lt='exa -aT --color=always --group-directories-first --icons' # tree listi
 alias l.='exa -a | egrep "^\."'
 #list
 
-alias listdir="ls -d */ > list --list"
+alias ldir="ls -d */ > list --list"
 
-#pacman
-alias sps='sudo pacman -S'
-alias spr='sudo pacman -R'
-alias sprs='sudo pacman -Rs'
-alias sprdd='sudo pacman -Rdd'
-alias spqo='sudo pacman -Qo'
-alias spsii='sudo pacman -Sii'
+###Pacman###
+alias pacsyu='sudo pacman -Syu' # update only standard pkgs
+alias pacsyyu='sudo pacman -Syyu' # Refresh pkglist & update
+alias pacss='sudo pacman -Ss' # Search only standard pkgs
+alias pacs='sudo pacman -S' # synchronize and install packages 
+alias pacr='sudo pacman -R' # remove packages 
+alias pacrs='sudo pacman -Rs' # remove packages with their dependencies that are not required by any other installed package 
+alias pacdd='sudo pacman -Rdd' # remove packages without checking for dependencies or prompting for confirmation
+alias pacqo='sudo pacman -Qo' # query the package database to determine which package owns a specific file
+alias pacsii='sudo pacman -Sii' # detailed information about all installed packages 
+alias clearCache="sudo pacman -Sc" # clean the package cache
+alias search="sudo pacman -Ss" # search packages 
+#alias unlock='sudo rm /var/lib/pacman/db.lck'   # remove pacman lock
+alias cleanup='sudo pacman -Rns (pacman -Qtdq)' # remove orphaned packages
+alias yayrs='yay -Rs' # remove packages with their dependencies that are not required by any other installed package
 
 # show the list of packages that need this package - depends mpv as example
 function_depends()  {
@@ -107,16 +115,6 @@ function_depends()  {
     }
 
 alias depends='function_depends'
-
-#fix obvious typo's
-alias cd..='cd ..'
-alias pdw='pwd'
-alias udpate='sudo pacman -Syyu'
-alias upate='sudo pacman -Syyu'
-alias updte='sudo pacman -Syyu'
-alias updqte='sudo pacman -Syyu'
-alias upqll='paru -Syu --noconfirm'
-alias yaysyyu='yay -Syyu --noconfirm'
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
@@ -156,16 +154,22 @@ alias userlist="cut -d: -f1 /etc/passwd | sort"
 #merge new settings
 alias merge="xrdb -merge ~/.Xresources"
 
-# Aliases for software managment
-# pacman or pm
-alias pacman='sudo pacman --color auto'
-alias update='sudo pacman -Syyu'
-alias upd='sudo pacman -Syyu'
+####AUR yay####
+alias yaysua='yay -Sua --noconfirm' # update only AUR pkgs (yay or paru)
+alias yaysyu='yay -Syu --noconfirm' # update standard pkgs and AUR
+alias yaysyyu='yay -Syyu --noconfirm' # update & sync standard pkgs and AUR
+alias yayss='yay -Ss' # Search for AUR packages
+alias yays='yay -S' # install form AUR 
+alias yayr='yay -R' # remove packages
 
-# paru as aur helper - updates everything
-alias pksyua="paru -Syu --noconfirm"
-alias upall="paru -Syu --noconfirm"
-alias upa="paru -Syu --noconfirm"
+####AUR Paru####
+alias parsua='paru -Sua --noconfirm' # update only AUR pkgs (yay or paru)
+alias parsyu='paru -Syu --noconfirm' # update standard pkgs and AUR
+alias parsyyu='paru -Syyu --noconfirm' # update & sync standard pkgs and AUR
+alias parss='paru -Ss' # Search for AUR packages
+alias pars='paru -S' # install form AUR 
+alias parr='paru -R' # remove packages
+
 alias vim="nvim"
 
 #ps
@@ -261,7 +265,8 @@ alias ydlmkv='yt-dlp -f "bestvideo&#91;ext=mkv]+bestaudio&#91;ext=mka]/best&#91;
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
-#Cleanup orphaned packages
+###list & cleanup orphaned packages
+alias listorphans='sudo pacman -Qdt' # lists orhpaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 # This will generate a list of explicitly installed packages
