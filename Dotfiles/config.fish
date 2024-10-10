@@ -185,6 +185,7 @@ alias yaysyyu='yay -Syyu --noconfirm'          # update & sync standard pkgs and
 alias yayss='yay -Ss'                         # Search for AUR packages
 alias yays='yay -S'                           # install form AUR 
 alias yayr='yay -R'                           # remove packages
+alias yayrns='yay -Rns'                       # remove packages with their dependencies that are not required by any other installed package 
 
 ####AUR Paru####
 alias parsua='paru -Sua --noconfirm'            # update only AUR pkgs (yay or paru)
@@ -193,6 +194,7 @@ alias parsyyu='paru -Syyu --noconfirm'          # update & sync standard pkgs an
 alias parss='paru -Ss'                         # Search for AUR packages
 alias pars='paru -S'                           # install form AUR 
 alias parr='paru -R'                           # remove packages
+alias parrns='paru -Rns'                       # remove packages with their dependencies that are not required by any other installed package
 
 ###get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
@@ -204,10 +206,6 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
-# paru and yay as aur helper - updates everything
-alias pursyu="paru -Syu --noconfirm"
-alias yaysyu='yay -Syu --noconfirm'
 
 # This will generate a list of explicitly installed packages
 alias list="sudo pacman -Qqe"
@@ -281,9 +279,8 @@ alias cfc="$EDITOR ~/.config/fish/config.fish"
 alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
 
 #alias clr='clear'                            #clear terminal 
-#alias neo="neofetch | lolcat
 alias cat='bat'
-alias neo="neofetch | lolcat -a -s 1150.0 -F 1.0"
+
 #Use man in fish shell
 alias man= '/usr/bin/man'
 
