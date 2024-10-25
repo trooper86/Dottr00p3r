@@ -299,6 +299,9 @@ alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 #shutdown or reboot
 alias sdn="sudo shutdown now"
 alias rs="reboot"
+I
+# Yazi is a terminal file manager written in Rust
+alias y="yazi"
 
 # Ranger
 alias r="ranger"
